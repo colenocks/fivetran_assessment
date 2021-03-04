@@ -21,3 +21,23 @@ const extractIpAddress = () => {
 };
 
 console.log(extractIpAddress());
+
+let ipAddress = extractIpAddress();
+let unique = [];
+let counter = [];
+
+ipAddress.forEach((ip) => {
+  let elem = unique.find((el) => el === ip);
+  if (!elem) {
+    unique.push(ip);
+    counter.push(1);
+  } else {
+    counter[unique.findIndex((i) => i === elem)]++;
+  }
+});
+
+const uniqueIPs = unique.map((val, index) => {
+  return { address: val, count: counter[index] };
+});
+
+console.log(uniqueIPs);
