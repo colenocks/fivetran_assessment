@@ -1,0 +1,14 @@
+{
+  "name": "fivetran_assessment",
+  "version": "1.0.0",
+  "description": "The following assessment includes several tasks that will reflect much of what we do in Customer Support here at Fivetran as part of our daily activities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Coleman Enocks",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
